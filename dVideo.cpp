@@ -8,7 +8,13 @@ int main()
     ifstream in("ss.in",ios::in);
     if(!in)
     {
-        cerr << "Failed opening the input file \"s.in\".";
+        cerr << "Failed opening the input the file \"s.in\".";
+        exit(1);
+    }
+    ofstream out("catch.txt",ios::out);
+    if(!out)
+    {
+        cerr << "Failed to output into the file \"catch.txt\".";
         exit(1);
     }
     string ss;
@@ -41,11 +47,13 @@ int main()
                                 break;
                             }
                         }
-                        for(int j=start;ss[j] != ',';j++)
+                        for(int j=start+1;ss[j+1] != ',';j++)
                         {
-                            cout<<ss[j];
+                            //cout<<ss[j];
+                            out<<ss[j];
                         }
-                        cout<<endl;
+                        //cout<<endl;
+                        out<<"\r\n";//windows換行
                     }
                     //#define DEBUG_WORD_LENGTH
                     #ifdef DEBUG_WORD_LENGTH
