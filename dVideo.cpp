@@ -39,7 +39,7 @@ int main()
                         #endif
                         int end = i,start;
                         for(int j=i;j>=0;j--)
-                        {
+                        {//得到網址開頭
                             if(ss[j] == '\'' )
                             {
                                 //cout<<j<<" "<<end<<endl;
@@ -48,7 +48,7 @@ int main()
                             }
                         }
                         for(int j=start+1;ss[j+1] != ',';j++)
-                        {
+                        {//不輸出前後的'
                             //cout<<ss[j];
                             out<<ss[j];
                         }
@@ -68,6 +68,6 @@ int main()
         #endif
         //cout<<ss<<endl;
     }
-    in.close();
+    in.close();//關閉檔案
     return 0;
 }
