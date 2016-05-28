@@ -11,7 +11,7 @@ int main()
         cerr << "Failed opening the input the file \"s.in\".";
         exit(1);
     }
-    ofstream out("catch.txt",ios::out);
+    ofstream out("catch.out",ios::out);
     if(!out)
     {
         cerr << "Failed to output into the file \"catch.txt\".";
