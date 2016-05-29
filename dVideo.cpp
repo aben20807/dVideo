@@ -69,5 +69,6 @@ int main()
         //cout<<ss<<endl;
     }
     in.close();//關閉檔案
+    out.close();
     return 0;
 }
