@@ -47,7 +47,7 @@ int main()
                                 break;
                             }
                         }
-                        for(int j=start+1;ss[j+1] != ',';j++)
+                        for(int j=start+1;ss[j] != '\'';j++)
                         {//不輸出前後的'
                             //cout<<ss[j];
                             out<<ss[j];
