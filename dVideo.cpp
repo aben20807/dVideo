@@ -38,16 +38,16 @@ int main()
                             cout<<"catch!!!!"<<endl<<ss<<endl;
                         #endif
                         int end = i,start;
-                        for(int j=i;j>=0;j--)
+                        for(int j=i-1;j>=0;j--)
                         {//得到網址開頭
-                            if(ss[j] == '\'' )
+                            if(ss[j] == '\'' || ss[j] == '\"')//105.07.27增加 " 的判斷
                             {
                                 //cout<<j<<" "<<end<<endl;
                                 start = j;
                                 break;
                             }
                         }
-                        for(int j=start+1;ss[j] != '\'';j++)
+                        for(int j=start+1;ss[j] != '\'' && ss[j] != '\"';j++)//105.07.27增加 " 的判斷
                         {//不輸出前後的'
                             //cout<<ss[j];
                             out<<ss[j];
