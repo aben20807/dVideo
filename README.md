@@ -5,9 +5,9 @@
 感謝.  
 
 ## Recording  (開發記錄)  
-利用notepad++編譯程式，即可一支.exe行走天下
-使用時可以直接下載 dVideo.exe 點擊使用
-或下載含 cygwin 相關 .dll 的 download.zip 解壓縮後使用
+利用notepad++編譯程式，即可一支.exe行走天下  
+使用時可以直接下載 dVideo.exe 點擊使用  
+或下載含 cygwin 相關 .dll 的 download.zip 解壓縮後使用  
 
 ## Some Tip  (技巧)  
 需要會使用瀏覽器的進階功能--"檢查".  
