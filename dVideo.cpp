@@ -5,17 +5,17 @@
 using namespace std;
 int main()
 {
-    ifstream in("ss.in",ios::in);
-    if(!in)
-    {
-        cerr << "Failed opening the input the file \"s.in\".";
-        exit(1);
-    }
-    ofstream out("catch.out",ios::out);
+    ofstream out("ss.out",ios::out);
     if(!out)
     {
-        cerr << "Failed to output into the file \"catch.txt\".";
+        cerr << "Failed to output into the file \"ss.out\".";
         exit(1);
+    }
+    ifstream in("ss.in",ios::in);
+    if(!in)
+    {//沒有讀取檔時輸出警告於 ss.out
+        out << "Failed opening the input the file \"ss.in\".";
+        //exit(1);
     }
     string ss;
     while(getline(in,ss))

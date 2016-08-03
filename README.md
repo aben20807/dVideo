@@ -18,8 +18,8 @@ Need to know use some advance technology in browser--"Check".
 ## file use  (檔案)  
 Copy the all code from web and paste into a file named "ss.in".  
 複製網頁的程式碼貼到文字文件，並改名成"ss.in" (不含").  
-After executing the program will get a file named "catch.out" and URL will in that.  
-執行程式後會得到一個叫"catch.out"的檔案，然後網址會在裡面  
+After executing the program will get a file named "ss.out" and URL will in that.  
+執行程式後會得到一個叫"ss.out"的檔案，然後網址會在裡面  
 
 ## p.s.  (附註)  
 The newline in Windows is \r\n. So, if change in Linux maybe need to change to \n.  
